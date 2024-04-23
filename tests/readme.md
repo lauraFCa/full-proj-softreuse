@@ -19,6 +19,11 @@ To get started with this project, follow these steps:
 3. Install the necessary dependencies with `pip install robotframework robotframework-requests`.
 4. Run the tests with `robot login_tests.robot`.
 
+To run the tests with the output directory:
+```
+robot --outputdir report login_tests.robot
+```
+
 The tests will start running and you will see the results in the terminal.
 
 ## Goals

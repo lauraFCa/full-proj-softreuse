@@ -1,6 +1,7 @@
 *** Settings ***
 Library         Collections
 Library         RequestsLibrary
+Library    JSONLibrary
 
 Test Setup      Given I start the session
 
@@ -45,5 +46,5 @@ Valid login
     [Documentation]    Make a request with valid username and password
     ${PAYLOAD}=         Create Dictionary       username=admin    password=admin
     ${response}=    POST On Session    ${ALIAS}     url=/login    json=${PAYLOAD}    expected_status=200
-    
-    Should Contain    ${response.content}     "token"
+    ${json_data}=    Convert String to JSON	    ${response.content}
+    Dictionary Should Contain Key    ${json_data}    token
