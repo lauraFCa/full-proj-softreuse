@@ -1,0 +1,40 @@
+name: Run API Tests
+
+on: 
+  workflow_dispatch:
+
+
+jobs:
+  run_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.*'
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Start server
+        run: npm start
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install python dependencies
+        run: |
+          pip install robotframework
+          pip install robotframework-requests 
+          pip install robotframework-jsonlibrary
+
+      
+      - name: Run API Tests
+        run: robot --outputdir report tests/login_tests.robot
+
+
