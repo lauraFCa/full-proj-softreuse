@@ -6,11 +6,6 @@ Library    JSONLibrary
 Test Setup      Given I start the session
 
 
-*** Variables ***
-${BASE_URL}    http://localhost:3000
-${ALIAS}    Login Session
-
-
 *** Keywords ***
 Given I start the session
     Create Session    ${ALIAS}    ${BASE_URL}    disable_warnings=True
