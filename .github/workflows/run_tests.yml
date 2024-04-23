@@ -19,9 +19,6 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
-      - name: Start server
-        run: npm start
-
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
@@ -33,7 +30,12 @@ jobs:
           pip install robotframework-requests 
           pip install robotframework-jsonlibrary
 
+      - name: Start server
+        run: npm start &
       
+      - name: Wait server start
+        run: sleep 10
+
       - name: Run API Tests
         run: robot --outputdir report tests/login_tests.robot
 
