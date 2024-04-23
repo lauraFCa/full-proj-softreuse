@@ -1,4 +1,4 @@
-# ExpressJS API Test Project
+# RobotFramework API Test Project
 
 ## Introduction
 

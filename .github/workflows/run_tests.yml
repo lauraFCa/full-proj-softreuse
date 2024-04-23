@@ -31,7 +31,10 @@ jobs:
           pip install robotframework-jsonlibrary
 
       - name: Start server
-        run: npm start &
+        run: |
+          npm start &
+          curl http://localhost:3000 -I
+
       
       - name: Wait server start
         run: sleep 10
