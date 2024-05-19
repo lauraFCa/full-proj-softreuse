@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken';
 
 export default class Authentication {
 
-    secretKey;
+    static secretKey;
 
     setSecretKey = (secretKey) => {
         this.secretKey = secretKey;
