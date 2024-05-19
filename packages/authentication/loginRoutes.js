@@ -13,6 +13,7 @@ const loginRouter = express.Router();
 /**
  * Create a new user in the database
  * @route POST /signup
+ * @async
  * @param {string} username - The username to create
  * @param {string} password - The password to create
  */
@@ -45,6 +46,7 @@ signupRouter.post('/', async (req, res) => {
 /**
  * Authenticate a user
  * @route POST /login
+ * @async
  * @param {string} username - The username to authenticate
  * @param {string} password - The password to authenticate
  * @returns {string} token - The JWT token to authenticate the user
