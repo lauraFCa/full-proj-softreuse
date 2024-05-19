@@ -15,7 +15,7 @@
     "lint": "eslint src",
     "build": "babel src --out-dir dist",
     "dev": "nodemon --exec babel-node src/index.js",
-    "tests": "robot --outputdir tests/report --report index tests/login_tests.robot"
+    "tests": "robot --outputdir tests/report --report index tests/suites"
   },
   "author": "Laura Castro",
   "license": "ISC",

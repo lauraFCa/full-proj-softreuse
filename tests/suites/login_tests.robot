@@ -7,7 +7,7 @@ ${ALIAS}       Login Session
 Library    Collections
 Library    RequestsLibrary
 Library    JSONLibrary
-Resource    ./base.robot
+Resource    ../base.robot
 
 Test Setup    Given I start the session    ${ALIAS} 
 
@@ -41,7 +41,7 @@ Given empty credentials When make the request Then token should not be returned
     Should Be Equal As Strings    ${response.content}    {"message":"Usuario nao encontrado"}
 
 
-Give Valid credentials When make the request Then token should be returned
+Given Valid credentials When make the request Then token should be returned
     [Documentation]    Make a request with valid username and password
     [Tags]    login    valid
     ${PAYLOAD}=      Create Dictionary           username=admin    password=admin
