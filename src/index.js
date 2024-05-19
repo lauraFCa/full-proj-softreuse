@@ -1,5 +1,6 @@
 import express from 'express';
-import variables from './../variables.json' assert { type: "json" };
+import { readFileSync } from "fs";
+const variables = JSON.parse(readFileSync("variables.json"));
 
 import { db, auth, signupRouter, loginRouter } from '../packages/authentication/loginRoutes.js';
 import { salesRouter } from './controllers/sales.js';
@@ -33,7 +34,8 @@ app.use((err, req, res, next) => {
     res.status(500).json({ message: 'Algo deu errado!' });
 });
 
+
 // Start the server
 app.listen(PORT, () => {
-    console.log(`Servidor rodando em http://localhost:${PORT}`);
-});
+  console.log(`Servidor rodando em http://localhost:${PORT}`)
+})

@@ -1,8 +1,8 @@
-import Base from './dbBase.js';
+import Base from './dbBase.js'
 
 export default class ProductMethods extends Base {
 
-    /*
+  /*
         {
             product: 'Product name',
             category: 'Category name',
