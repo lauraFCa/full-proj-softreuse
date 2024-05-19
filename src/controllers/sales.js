@@ -41,13 +41,13 @@ salesRouter.get('/', auth.authenticateToken, async (req, res) => {
                 total: sales[0]['total'],
             }
             res.json(salesObj);
-        } catch {
+        } catch (err) {
             console.log('Error executing database query:', err);
             res.status(500).json({ error: 'Internal server error' });
         }
-  } else {
-    res.status(401).json({ error: 'Access denied - No token provided' })
-  }
+    } else {
+        res.status(401).json({ error: 'Access denied - No token provided' })
+    }
 })
 
 /**
@@ -64,14 +64,14 @@ salesRouter.post('/', auth.authenticateToken, async (req, res) => {
         try {
             const inserted = await db.createSale({ product_id: req.body.product_id, quantity: req.body.quantity, total: req.body.total });
             res.json(inserted);
-        } catch {
+        } catch (err) {
             console.log('Error executing database query:', err);
             res.status(500).json({ error: 'Internal server error' });
         }
-  } else {
-    console.log('Access denied - Invalid token')
-    res.status(401).json({ error: 'Access denied' })
-  }
+    } else {
+        console.log('Access denied - Invalid token')
+        res.status(401).json({ error: 'Access denied' })
+    }
 })
 
 /**
@@ -88,7 +88,7 @@ salesRouter.put('/', auth.authenticateToken, async (req, res) => {
         try {
             const updated = await db.updateSale(req.params.id, req.body);
             res.json(updated);
-        } catch {
+        } catch (err){
             console.log('Error executing database query:', err);
             res.status(500).json({ error: 'Internal server error' });
         }
@@ -116,14 +116,14 @@ salesRouter.delete('/', auth.authenticateToken, async (req, res) => {
             } else {
                 res.status(200).json({ message: 'Sale deleted' });
             }
-        } catch {
+        } catch (err) {
             console.log('Error executing database query:', err);
             res.status(500).json({ error: 'Internal server error' });
         }
     } else {
         console.log('Access denied - Invalid token');
         res.status(401).json({ error: 'Access denied' });
-  }
+    }
 })
 
 
