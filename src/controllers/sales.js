@@ -1,6 +1,8 @@
 import express from 'express';
 import Authentication from '../../packages/authentication/Authentication.js';
-import variables from '../../variables.json' assert { type: "json" };
+import { readFileSync } from "fs";
+const variables = JSON.parse(readFileSync("variables.json"));
+
 import SalesMethods from './../database/dbSales.js';
 
 
