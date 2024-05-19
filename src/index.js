@@ -33,7 +33,8 @@ app.use((err, req, res, next) => {
     res.status(500).json({ message: 'Algo deu errado!' });
 });
 
+
 // Start the server
 app.listen(PORT, () => {
-    console.log(`Servidor rodando em http://localhost:${PORT}`);
-});
+  console.log(`Servidor rodando em http://localhost:${PORT}`)
+})

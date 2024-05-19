@@ -12,6 +12,7 @@ db.setConnParams(variables['database']);
 
 const salesRouter = express.Router();
 
+
 /**
  * Retrieves all sales from the database.
  * @route GET /sales
@@ -42,11 +43,10 @@ salesRouter.get('/', auth.authenticateToken, async (req, res) => {
             console.log('Error executing database query:', err);
             res.status(500).json({ error: 'Internal server error' });
         }
-
-    } else {
-        res.status(401).json({ error: 'Access denied - No token provided' });
-    }
-});
+  } else {
+    res.status(401).json({ error: 'Access denied - No token provided' })
+  }
+})
 
 /**
  * Creates a new sale in the database.
@@ -66,11 +66,11 @@ salesRouter.post('/', auth.authenticateToken, async (req, res) => {
             console.log('Error executing database query:', err);
             res.status(500).json({ error: 'Internal server error' });
         }
-    } else {
-        console.log('Access denied - Invalid token');
-        res.status(401).json({ error: 'Access denied' });
-    }
-});
+  } else {
+    console.log('Access denied - Invalid token')
+    res.status(401).json({ error: 'Access denied' })
+  }
+})
 
 /**
  * Updates a sale in the database.
@@ -94,7 +94,7 @@ salesRouter.put('/', auth.authenticateToken, async (req, res) => {
         console.log('Access denied - Invalid token');
         res.status(401).json({ error: 'Access denied' });
     }
-});
+})
 
 /**
  * Deletes a sale from the database.
@@ -121,8 +121,9 @@ salesRouter.delete('/', auth.authenticateToken, async (req, res) => {
     } else {
         console.log('Access denied - Invalid token');
         res.status(401).json({ error: 'Access denied' });
-    }
-});
+  }
+})
 
 
 export { salesRouter };
+

@@ -1,11 +1,9 @@
-import mysql from 'mysql2/promise';
-
+import mysql from 'mysql2/promise'
 
 /**
  * Represents a base class for database operations.
  */
 export default class Base {
-    
     connParams;
 
     setConnParams = (params) => {
@@ -23,13 +21,13 @@ export default class Base {
         }
         
         const connection = await mysql.createConnection(this.connParams);
-
-        try {
-            const [results, fields] = await connection.query(sql);
-            console.log('Query executed successfully!');
-            return results;
-        } catch (e) {
-            console.log('Error executing the query:', e);
-        }
-    };
+    try {
+      const [results, fields] = await connection.query(sql)
+      console.log('fields:', fields)
+      console.log('Query executed successfully!')
+      return results
+    } catch (e) {
+      console.log('Error executing the query:', e)
+    }
+  }
 }
