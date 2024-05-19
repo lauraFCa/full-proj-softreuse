@@ -1,10 +1,10 @@
-import SalesMethods from '../database/dbSales.js';
-import { authenticateToken } from './authenticate.js';
+import SalesMethods from '../database/dbSales.js'
+import { authenticateToken } from './authenticate.js'
 
-import express from 'express';
-const router = express.Router();
+import express from 'express'
+const router = express.Router()
 
-const db = new SalesMethods();
+const db = new SalesMethods()
 
 /**
  * GET /sales
@@ -21,32 +21,30 @@ const db = new SalesMethods();
  * @throws {Error} If there is an error executing the database query.
  */
 router.get('/', authenticateToken, async (req, res) => {
-    console.log('req.user:', req['userId']);
-    if (req['userId']) {
+  console.log('req.user:', req.userId)
+  if (req.userId) {
+    try {
+      const sales = await db.getSales()
+      console.log(sales)
 
-        try {
-            const sales = await db.getSales();
-            console.log(sales);
-
-            const salesObj = {
-                product:{
-                    name: sales[0]['name'],
-                    price: sales[0]['price'],
-                    category: sales[0]['category'],
-                },
-                quantity_sold: sales[0]['quantity'],
-                total: sales[0]['total'],
-            }
-            res.json(salesObj);
-        } catch {
-            console.log('Error executing database query:', err);
-            res.status(500).json({ error: 'Internal server error' });
-        }
-
-    } else {
-        res.status(401).json({ error: 'Access denied - No token provided' });
+      const salesObj = {
+        product: {
+          name: sales[0].name,
+          price: sales[0].price,
+          category: sales[0].category
+        },
+        quantity_sold: sales[0].quantity,
+        total: sales[0].total
+      }
+      res.json(salesObj)
+    } catch (err) {
+      console.log('Error executing database query:', err)
+      res.status(500).json({ error: 'Internal server error' })
     }
-});
+  } else {
+    res.status(401).json({ error: 'Access denied - No token provided' })
+  }
+})
 
 /**
  * POST /sales
@@ -63,19 +61,19 @@ router.get('/', authenticateToken, async (req, res) => {
  * @throws {Error} If there is an error executing the database query.
  */
 router.post('/', authenticateToken, async (req, res) => {
-    if (req.user) {
-        try {
-            const inserted = await db.createSale({ product_id: req.body.product_id, quantity: req.body.quantity, total: req.body.total });
-            res.json(inserted);
-        } catch {
-            console.log('Error executing database query:', err);
-            res.status(500).json({ error: 'Internal server error' });
-        }
-    } else {
-        console.log('Access denied - Invalid token');
-        res.status(401).json({ error: 'Access denied' });
+  if (req.user) {
+    try {
+      const inserted = await db.createSale({ product_id: req.body.product_id, quantity: req.body.quantity, total: req.body.total })
+      res.json(inserted)
+    } catch (err) {
+      console.log('Error executing database query:', err)
+      res.status(500).json({ error: 'Internal server error' })
     }
-});
+  } else {
+    console.log('Access denied - Invalid token')
+    res.status(401).json({ error: 'Access denied' })
+  }
+})
 
 /**
  * PUT /sales/:id
@@ -92,19 +90,19 @@ router.post('/', authenticateToken, async (req, res) => {
  * @throws {Error} If there is an error executing the database query.
  */
 router.put('/', authenticateToken, async (req, res) => {
-    if (req.user) {
-        try {
-            const updated = await db.updateSale(req.params.id, req.body);
-            res.json(updated);
-        } catch {
-            console.log('Error executing database query:', err);
-            res.status(500).json({ error: 'Internal server error' });
-        }
-    } else {
-        console.log('Access denied - Invalid token');
-        res.status(401).json({ error: 'Access denied' });
+  if (req.user) {
+    try {
+      const updated = await db.updateSale(req.params.id, req.body)
+      res.json(updated)
+    } catch (err) {
+      console.log('Error executing database query:', err)
+      res.status(500).json({ error: 'Internal server error' })
     }
-});
+  } else {
+    console.log('Access denied - Invalid token')
+    res.status(401).json({ error: 'Access denied' })
+  }
+})
 
 /**
  * DELETE /sales/:id
@@ -121,20 +119,20 @@ router.put('/', authenticateToken, async (req, res) => {
  * @throws {Error} If there is an error executing the database query.
  */
 router.delete('/', authenticateToken, async (req, res) => {
-    if (req.user) {
-        try {
-            const deleted = await db.deleteSale(req.params.id);
-            if (deleted.lenght === 0) {
-                return res.status(404).json({ message: 'Sale not found' });
-            }
-        } catch {
-            console.log('Error executing database query:', err);
-            res.status(500).json({ error: 'Internal server error' });
-        }
-    } else {
-        console.log('Access denied - Invalid token');
-        res.status(401).json({ error: 'Access denied' });
+  if (req.user) {
+    try {
+      const deleted = await db.deleteSale(req.params.id)
+      if (deleted.lenght === 0) {
+        return res.status(404).json({ message: 'Sale not found' })
+      }
+    } catch (err) {
+      console.log('Error executing database query:', err)
+      res.status(500).json({ error: 'Internal server error' })
     }
-});
+  } else {
+    console.log('Access denied - Invalid token')
+    res.status(401).json({ error: 'Access denied' })
+  }
+})
 
-export default router;
+export default router
