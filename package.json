@@ -14,7 +14,7 @@
     "start": "node src/index.js",
     "build": "babel src --out-dir dist",
     "dev": "nodemon --exec babel-node src/index.js",
-    "test": "robot --outputdir tests/report --report index tests/login_tests.robot"
+    "tests": "robot --outputdir tests/report --report index tests/login_tests.robot"
   },
   "author": "Laura Castro",
   "license": "ISC",

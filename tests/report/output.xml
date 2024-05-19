@@ -1,228 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-05-19T16:16:56.973925" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-05-19T16:27:21.576130" rpa="false" schemaversion="5">
 <suite id="s1" name="Login Tests" source="E:\full-proj-softreuse\tests\login_tests.robot">
-<test id="s1-t1" name="Given wrong password When make the request Then token should not be returned" line="21">
-<kw name="Given I start the session" type="SETUP">
+<test id="s1-t1" name="Given wrong password When make the request Then token should not be returned" line="17">
+<kw name="Given I start the session" owner="base" type="SETUP">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2024-05-19T16:16:57.145669" level="INFO">Creating Session using : alias=Login Session, url=http://localhost:3000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<arg>${ALIAS}</arg>
+<msg time="2024-05-19T16:27:21.824309" level="INFO">Creating Session using : alias=Login Session, url=http://localhost:3000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>${session_alias}</arg>
 <arg>${BASE_URL}</arg>
 <arg>disable_warnings=True</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2024-05-19T16:16:57.145669" elapsed="0.001235"/>
+<status status="PASS" start="2024-05-19T16:27:21.823275" elapsed="0.001034"/>
 </kw>
-<status status="PASS" start="2024-05-19T16:16:57.145669" elapsed="0.001235"/>
+<arg>${ALIAS}</arg>
+<status status="PASS" start="2024-05-19T16:27:21.823275" elapsed="0.001034"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-05-19T16:16:57.147408" level="INFO">${PAYLOAD} = {'username': 'admin', 'password': '123456'}</msg>
+<msg time="2024-05-19T16:27:21.825195" level="INFO">${PAYLOAD} = {'username': 'admin', 'password': '123456'}</msg>
 <var>${PAYLOAD}</var>
 <arg>username=admin</arg>
 <arg>password=123456</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-05-19T16:16:57.146904" elapsed="0.000504"/>
+<status status="PASS" start="2024-05-19T16:27:21.824309" elapsed="0.000886"/>
 </kw>
 <kw name="POST On Session" owner="RequestsLibrary">
-<msg time="2024-05-19T16:16:57.309788" level="INFO">POST Request : url=http://localhost:3000/login 
+<msg time="2024-05-19T16:27:21.937125" level="INFO">POST Request : url=http://localhost:3000/login 
  path_url=/login 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '43', 'Content-Type': 'application/json'} 
  body=b'{"username": "admin", "password": "123456"}' 
  </msg>
-<msg time="2024-05-19T16:16:57.309788" level="INFO">POST Response : url=http://localhost:3000/login 
+<msg time="2024-05-19T16:27:21.938145" level="INFO">POST Response : url=http://localhost:3000/login 
  status=401, reason=Unauthorized 
- headers={'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '53', 'ETag': 'W/"35-n1oVaWyvaAMHx9q2WMJqV6rlRLc"', 'Date': 'Sun, 19 May 2024 19:16:57 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
+ headers={'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '53', 'ETag': 'W/"35-n1oVaWyvaAMHx9q2WMJqV6rlRLc"', 'Date': 'Sun, 19 May 2024 19:27:21 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
  body={"message":"Credenciais invalidas - Senha incorreta"} 
  </msg>
-<msg time="2024-05-19T16:16:57.309788" level="INFO">${response} = &lt;Response [401]&gt;</msg>
+<msg time="2024-05-19T16:27:21.938145" level="INFO">${response} = &lt;Response [401]&gt;</msg>
 <var>${response}</var>
 <arg>${ALIAS}</arg>
 <arg>url=/login</arg>
 <arg>json=${PAYLOAD}</arg>
 <arg>expected_status=401</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2024-05-19T16:16:57.147408" elapsed="0.162380"/>
+<status status="PASS" start="2024-05-19T16:27:21.825195" elapsed="0.112950"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
-<msg time="2024-05-19T16:16:57.310384" level="INFO">Argument types are:
+<msg time="2024-05-19T16:27:21.938697" level="INFO">Argument types are:
 &lt;class 'bytes'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${response.content}</arg>
 <arg>{"message":"Credenciais invalidas - Senha incorreta"}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-05-19T16:16:57.310384" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-19T16:27:21.938697" elapsed="0.000000"/>
 </kw>
 <doc>Make a request with wrong password</doc>
 <tag>invalid</tag>
 <tag>login</tag>
-<status status="PASS" start="2024-05-19T16:16:57.144297" elapsed="0.167124"/>
+<status status="PASS" start="2024-05-19T16:27:21.822278" elapsed="0.117232"/>
 </test>
-<test id="s1-t2" name="Given wrong username When make the request Then token should not be returned" line="30">
-<kw name="Given I start the session" type="SETUP">
+<test id="s1-t2" name="Given wrong username When make the request Then token should not be returned" line="26">
+<kw name="Given I start the session" owner="base" type="SETUP">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2024-05-19T16:16:57.312973" level="INFO">Creating Session using : alias=Login Session, url=http://localhost:3000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<arg>${ALIAS}</arg>
+<msg time="2024-05-19T16:27:21.941887" level="INFO">Creating Session using : alias=Login Session, url=http://localhost:3000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>${session_alias}</arg>
 <arg>${BASE_URL}</arg>
 <arg>disable_warnings=True</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2024-05-19T16:16:57.312973" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-19T16:27:21.941887" elapsed="0.000525"/>
 </kw>
-<status status="PASS" start="2024-05-19T16:16:57.312973" elapsed="0.000000"/>
+<arg>${ALIAS}</arg>
+<status status="PASS" start="2024-05-19T16:27:21.940770" elapsed="0.001642"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-05-19T16:16:57.314175" level="INFO">${PAYLOAD} = {'username': 'fakeuser', 'password': '123456'}</msg>
+<msg time="2024-05-19T16:27:21.942412" level="INFO">${PAYLOAD} = {'username': 'fakeuser', 'password': '123456'}</msg>
 <var>${PAYLOAD}</var>
 <arg>username=fakeuser</arg>
 <arg>password=123456</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-05-19T16:16:57.314175" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-19T16:27:21.942412" elapsed="0.000000"/>
 </kw>
 <kw name="POST On Session" owner="RequestsLibrary">
-<msg time="2024-05-19T16:16:57.324018" level="INFO">POST Request : url=http://localhost:3000/login 
+<msg time="2024-05-19T16:27:21.954962" level="INFO">POST Request : url=http://localhost:3000/login 
  path_url=/login 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '46', 'Content-Type': 'application/json'} 
  body=b'{"username": "fakeuser", "password": "123456"}' 
  </msg>
-<msg time="2024-05-19T16:16:57.324018" level="INFO">POST Response : url=http://localhost:3000/login 
+<msg time="2024-05-19T16:27:21.955973" level="INFO">POST Response : url=http://localhost:3000/login 
  status=404, reason=Not Found 
- headers={'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '36', 'ETag': 'W/"24-s5ILTRAaCbI+5d8Lfht2piwASLQ"', 'Date': 'Sun, 19 May 2024 19:16:57 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
+ headers={'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '36', 'ETag': 'W/"24-s5ILTRAaCbI+5d8Lfht2piwASLQ"', 'Date': 'Sun, 19 May 2024 19:27:21 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
  body={"message":"Usuario nao encontrado"} 
  </msg>
-<msg time="2024-05-19T16:16:57.324018" level="INFO">${response} = &lt;Response [404]&gt;</msg>
+<msg time="2024-05-19T16:27:21.956101" level="INFO">${response} = &lt;Response [404]&gt;</msg>
 <var>${response}</var>
 <arg>${ALIAS}</arg>
 <arg>url=/login</arg>
 <arg>json=${PAYLOAD}</arg>
 <arg>expected_status=404</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2024-05-19T16:16:57.314175" elapsed="0.009843"/>
+<status status="PASS" start="2024-05-19T16:27:21.942412" elapsed="0.013689"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
-<msg time="2024-05-19T16:16:57.325029" level="INFO">Argument types are:
+<msg time="2024-05-19T16:27:21.957155" level="INFO">Argument types are:
 &lt;class 'bytes'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${response.content}</arg>
 <arg>{"message":"Usuario nao encontrado"}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-05-19T16:16:57.324018" elapsed="0.001011"/>
+<status status="PASS" start="2024-05-19T16:27:21.956101" elapsed="0.001054"/>
 </kw>
 <doc>Make a request with wrong username</doc>
 <tag>invalid</tag>
 <tag>login</tag>
-<status status="PASS" start="2024-05-19T16:16:57.312425" elapsed="0.013602"/>
+<status status="PASS" start="2024-05-19T16:27:21.940770" elapsed="0.016385"/>
 </test>
-<test id="s1-t3" name="Given empty credentials When make the request Then token should not be returned" line="39">
-<kw name="Given I start the session" type="SETUP">
+<test id="s1-t3" name="Given empty credentials When make the request Then token should not be returned" line="35">
+<kw name="Given I start the session" owner="base" type="SETUP">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2024-05-19T16:16:57.328026" level="INFO">Creating Session using : alias=Login Session, url=http://localhost:3000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<arg>${ALIAS}</arg>
+<msg time="2024-05-19T16:27:21.959436" level="INFO">Creating Session using : alias=Login Session, url=http://localhost:3000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>${session_alias}</arg>
 <arg>${BASE_URL}</arg>
 <arg>disable_warnings=True</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2024-05-19T16:16:57.327026" elapsed="0.001000"/>
+<status status="PASS" start="2024-05-19T16:27:21.958430" elapsed="0.001006"/>
 </kw>
-<status status="PASS" start="2024-05-19T16:16:57.327026" elapsed="0.001000"/>
+<arg>${ALIAS}</arg>
+<status status="PASS" start="2024-05-19T16:27:21.958430" elapsed="0.001006"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-05-19T16:16:57.328026" level="INFO">${PAYLOAD} = {'username': '', 'password': ''}</msg>
+<msg time="2024-05-19T16:27:21.959436" level="INFO">${PAYLOAD} = {'username': '', 'password': ''}</msg>
 <var>${PAYLOAD}</var>
 <arg>username=</arg>
 <arg>password=</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-05-19T16:16:57.328026" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-19T16:27:21.959436" elapsed="0.000000"/>
 </kw>
 <kw name="POST On Session" owner="RequestsLibrary">
-<msg time="2024-05-19T16:16:57.339613" level="INFO">POST Request : url=http://localhost:3000/login 
+<msg time="2024-05-19T16:27:21.977752" level="INFO">POST Request : url=http://localhost:3000/login 
  path_url=/login 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '32', 'Content-Type': 'application/json'} 
  body=b'{"username": "", "password": ""}' 
  </msg>
-<msg time="2024-05-19T16:16:57.341066" level="INFO">POST Response : url=http://localhost:3000/login 
+<msg time="2024-05-19T16:27:21.977752" level="INFO">POST Response : url=http://localhost:3000/login 
  status=404, reason=Not Found 
- headers={'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '36', 'ETag': 'W/"24-s5ILTRAaCbI+5d8Lfht2piwASLQ"', 'Date': 'Sun, 19 May 2024 19:16:57 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
+ headers={'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '36', 'ETag': 'W/"24-s5ILTRAaCbI+5d8Lfht2piwASLQ"', 'Date': 'Sun, 19 May 2024 19:27:21 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
  body={"message":"Usuario nao encontrado"} 
  </msg>
-<msg time="2024-05-19T16:16:57.341066" level="INFO">${response} = &lt;Response [404]&gt;</msg>
+<msg time="2024-05-19T16:27:21.978776" level="INFO">${response} = &lt;Response [404]&gt;</msg>
 <var>${response}</var>
 <arg>${ALIAS}</arg>
 <arg>url=/login</arg>
 <arg>json=${PAYLOAD}</arg>
 <arg>expected_status=404</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2024-05-19T16:16:57.329026" elapsed="0.012040"/>
+<status status="PASS" start="2024-05-19T16:27:21.959436" elapsed="0.019340"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
-<msg time="2024-05-19T16:16:57.342072" level="INFO">Argument types are:
+<msg time="2024-05-19T16:27:21.979815" level="INFO">Argument types are:
 &lt;class 'bytes'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${response.content}</arg>
 <arg>{"message":"Usuario nao encontrado"}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-05-19T16:16:57.341066" elapsed="0.001006"/>
+<status status="PASS" start="2024-05-19T16:27:21.978776" elapsed="0.001039"/>
 </kw>
 <doc>Make a request with empty username and password</doc>
 <tag>invalid</tag>
 <tag>login</tag>
-<status status="PASS" start="2024-05-19T16:16:57.327026" elapsed="0.015046"/>
+<status status="PASS" start="2024-05-19T16:27:21.958430" elapsed="0.021385"/>
 </test>
-<test id="s1-t4" name="Give Valid credentials When make the request Then token should be returned" line="48">
-<kw name="Given I start the session" type="SETUP">
+<test id="s1-t4" name="Give Valid credentials When make the request Then token should be returned" line="44">
+<kw name="Given I start the session" owner="base" type="SETUP">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2024-05-19T16:16:57.344591" level="INFO">Creating Session using : alias=Login Session, url=http://localhost:3000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<arg>${ALIAS}</arg>
+<msg time="2024-05-19T16:27:21.983613" level="INFO">Creating Session using : alias=Login Session, url=http://localhost:3000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>${session_alias}</arg>
 <arg>${BASE_URL}</arg>
 <arg>disable_warnings=True</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2024-05-19T16:16:57.344591" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-19T16:27:21.982574" elapsed="0.001546"/>
 </kw>
-<status status="PASS" start="2024-05-19T16:16:57.343585" elapsed="0.001006"/>
+<arg>${ALIAS}</arg>
+<status status="PASS" start="2024-05-19T16:27:21.982032" elapsed="0.002088"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-05-19T16:16:57.345591" level="INFO">${PAYLOAD} = {'username': 'admin', 'password': 'admin'}</msg>
+<msg time="2024-05-19T16:27:21.985172" level="INFO">${PAYLOAD} = {'username': 'admin', 'password': 'admin'}</msg>
 <var>${PAYLOAD}</var>
 <arg>username=admin</arg>
 <arg>password=admin</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-05-19T16:16:57.344591" elapsed="0.001000"/>
+<status status="PASS" start="2024-05-19T16:27:21.985172" elapsed="0.000000"/>
 </kw>
 <kw name="POST On Session" owner="RequestsLibrary">
-<msg time="2024-05-19T16:16:57.442137" level="INFO">POST Request : url=http://localhost:3000/login 
+<msg time="2024-05-19T16:27:22.059990" level="INFO">POST Request : url=http://localhost:3000/login 
  path_url=/login 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '42', 'Content-Type': 'application/json'} 
  body=b'{"username": "admin", "password": "admin"}' 
  </msg>
-<msg time="2024-05-19T16:16:57.442137" level="INFO">POST Response : url=http://localhost:3000/login 
+<msg time="2024-05-19T16:27:22.060950" level="INFO">POST Response : url=http://localhost:3000/login 
  status=200, reason=OK 
- headers={'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '155', 'ETag': 'W/"9b-2AiQFfK6nPyH0U1MLKK6YettJLw"', 'Date': 'Sun, 19 May 2024 19:16:57 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
- body={"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcxNjE0NjIxNywiZXhwIjoxNzE2MTQ5ODE3fQ._T-A-3e2csxej55YOH8d9Kew9bdWJQMaPlosuKvDoRk"} 
+ headers={'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '155', 'ETag': 'W/"9b-gbB1oXAveVDFpaenttwFb6CgURg"', 'Date': 'Sun, 19 May 2024 19:27:22 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
+ body={"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcxNjE0Njg0MiwiZXhwIjoxNzE2MTUwNDQyfQ.gmvGc0V-pi_fFdQzisMMq7oRXzAmAtME5E9HTbgZ6UY"} 
  </msg>
-<msg time="2024-05-19T16:16:57.442137" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2024-05-19T16:27:22.060950" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>${ALIAS}</arg>
 <arg>url=/login</arg>
 <arg>json=${PAYLOAD}</arg>
 <arg>expected_status=200</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2024-05-19T16:16:57.345591" elapsed="0.096546"/>
+<status status="PASS" start="2024-05-19T16:27:21.986300" elapsed="0.074650"/>
 </kw>
 <kw name="Convert String To Json" owner="JSONLibrary">
-<msg time="2024-05-19T16:16:57.443147" level="INFO">${json_data} = {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcxNjE0NjIxNywiZXhwIjoxNzE2MTQ5ODE3fQ._T-A-3e2csxej55YOH8d9Kew9bdWJQMaPlosuKvDoRk'}</msg>
+<msg time="2024-05-19T16:27:22.061453" level="INFO">${json_data} = {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcxNjE0Njg0MiwiZXhwIjoxNzE2MTUwNDQyfQ.gmvGc0V-pi_fFdQzisMMq7oRXzAmAtME5E9HTbgZ6UY'}</msg>
 <var>${json_data}</var>
 <arg>${response.content}</arg>
 <doc>Convert String to JSON object</doc>
-<status status="PASS" start="2024-05-19T16:16:57.442137" elapsed="0.001010"/>
+<status status="PASS" start="2024-05-19T16:27:22.061453" elapsed="0.000000"/>
 </kw>
 <kw name="Dictionary Should Contain Key" owner="Collections">
-<msg time="2024-05-19T16:16:57.444034" level="INFO">False</msg>
+<msg time="2024-05-19T16:27:22.062384" level="INFO">False</msg>
 <arg>${json_data}</arg>
 <arg>token</arg>
 <doc>Fails if ``key`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2024-05-19T16:16:57.443884" elapsed="0.000150"/>
+<status status="PASS" start="2024-05-19T16:27:22.062384" elapsed="0.000000"/>
 </kw>
 <doc>Make a request with valid username and password</doc>
 <tag>login</tag>
 <tag>valid</tag>
-<status status="PASS" start="2024-05-19T16:16:57.343585" elapsed="0.100449"/>
+<status status="PASS" start="2024-05-19T16:27:21.980790" elapsed="0.082104"/>
 </test>
-<status status="PASS" start="2024-05-19T16:16:56.975931" elapsed="0.469110"/>
+<status status="PASS" start="2024-05-19T16:27:21.581227" elapsed="0.481667"/>
 </suite>
 <statistics>
 <total>
