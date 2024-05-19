@@ -24,12 +24,12 @@ app.use('/login', loginRouter);
 app.use('/sales', salesRouter);
 
 // Endpoint not found handler
-app.use((req, res, next) => {
+app.use((req, res) => {
     res.status(404).json({ message: 'Endpoint não encontrado' });
 });
 
 // Error handling middleware
-app.use((err, req, res, next) => {
+app.use((err, req, res) => {
     console.error(err.stack);
     res.status(500).json({ message: 'Algo deu errado!' });
 });
