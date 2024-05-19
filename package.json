@@ -12,9 +12,11 @@
   },
   "scripts": {
     "start": "node src/index.js",
+    "build": "babel src --out-dir dist",
+    "dev": "nodemon --exec babel-node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Laura Castro",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
@@ -25,8 +27,9 @@
     "nodemon": "^3.1.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.24.1",
-    "@babel/core": "^7.24.4",
-    "@babel/preset-env": "^7.24.4"
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.24.5"
   }
 }
