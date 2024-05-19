@@ -6,19 +6,23 @@ import mysql from 'mysql2/promise';
  */
 export default class Base {
     
+    connParams;
+
+    setConnParams = (params) => {
+        this.connParams = params;
+    }
+
     /**
      * Runs a SQL query on the database.
      * @param {string} sql - The SQL query to execute.
      * @returns {Promise<Array>} - A promise that resolves to the query results.
      */
     runQuery = async (sql) => {
-        const connection = await mysql.createConnection({
-            host: 'localhost',
-            port: '3306',
-            user: 'root',
-            password: '',
-            database: 'reutilizacaoapp',
-        });
+        if(!this.connParams) {
+            throw new Error('Connection parameters not set!');
+        }
+        
+        const connection = await mysql.createConnection(this.connParams);
 
         try {
             const [results, fields] = await connection.query(sql);
