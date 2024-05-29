@@ -2,7 +2,7 @@ import express from 'express';
 import { readFileSync } from "fs";
 const variables = JSON.parse(readFileSync("variables.json"));
 
-import { db, auth, signupRouter, loginRouter } from '../packages/authentication/loginRoutes.js';
+import { db, auth, signupRouter, loginRouter } from './../packages-softreuse/authentication/loginRoutes.js';
 import { salesRouter } from './controllers/sales.js';
 
 // Set the secret key for authentication

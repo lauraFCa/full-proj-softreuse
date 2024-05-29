@@ -1,0 +1,3 @@
+[submodule "packages-softreuse"]
+	path = packages-softreuse
+	url = https://github.com/lauraFCa/packages-softreuse.git
