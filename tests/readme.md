@@ -21,7 +21,7 @@ To get started with this project, follow these steps:
 
 To run the tests with the output directory:
 ```
-robot --outputdir report login_tests.robot
+robot --outputdir tests/report tests/login_tests.robot
 ```
 
 The tests will start running and you will see the results in the terminal.

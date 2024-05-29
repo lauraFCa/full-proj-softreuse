@@ -1,5 +1,5 @@
 import express from 'express';
-import Authentication from '../../packages/authentication/Authentication.js';
+import Authentication from './../../packages-softreuse/authentication/Authentication.js';
 import { readFileSync } from "fs";
 const variables = JSON.parse(readFileSync("variables.json"));
 
