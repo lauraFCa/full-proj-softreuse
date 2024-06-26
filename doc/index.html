@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Home | full-proj-softreuse</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">controllers</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-authenticateToken">authenticateToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-generateToken">generateToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-loginRouter">loginRouter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-signupRouter">signupRouter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-productsRouter">productsRouter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-salesRouter">salesRouter</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#database">database</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/database/dbBase.js~Base.html">Base</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/database/dbProduct.js~ProductsMethods.html">ProductsMethods</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/database/dbSales.js~SalesMethods.html">SalesMethods</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/database/dbUsers.js~LoginMethods.html">LoginMethods</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="software-reusability-class">Software Reusability Class</h1><h2 id="introduction">Introduction</h2><p>This is a simple Express.js application that provides authentication and sales routes. The application is designed to run on port 3000.</p>
+<h2 id="structure">Structure</h2><p>The source project is inside <code>src</code> folder, and is structured as follows:</p>
+<ul>
+<li><code>index.js</code>: This is the entry point of the application. It sets up the Express server, middleware, and routes.</li>
+</ul>
+<h3 id="controllers">Controllers</h3><ul>
+<li><code>authenticate.js</code>: This file contains the methods related to token authentication, such as token generation and validation.</li>
+<li><code>sales.js</code>: This file contains the routes for handling sales-related requests.</li>
+<li><code>login.js</code>: This file contains the routes for user login and signup</li>
+</ul>
+<h3 id="database">Database</h3><ul>
+<li><code>dbUsers</code>: This file contains methods with queries related to users on database</li>
+<li><code>dbProduct</code>: This file contains methods with queries related to product on database</li>
+<li><code>dbSales</code>: This file contains methods with queries related to sales table on database</li>
+<li><code>dbBase</code>: This file contains base methods to be used in all other database files.</li>
+</ul>
+<h2 id="getting-started">Getting Started</h2><p>To get started with this project, follow these steps:</p>
+<ol>
+<li>Clone the repository to your local machine.</li>
+<li>Navigate to the project directory.</li>
+<li>Install the necessary dependencies with <code>npm install</code>.</li>
+<li>Start the server with <code>npm start</code>.</li>
+</ol>
+<p>The server will start running at <code>http://localhost:3000</code>.</p>
+<h2 id="goals">Goals</h2><p>The goal of this project is to provide a simple, scalable template for an Express.js application with user authentication and sales functionality.</p>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
