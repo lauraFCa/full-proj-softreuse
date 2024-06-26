@@ -1,0 +1,1866 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/controllers/authenticate.js",
+    "content": "import jwt from 'jsonwebtoken'\r\n\r\nconst secretKey = 'A1B2C3D4E5F6G7H8'\r\n\r\n/**\r\n * Generates a JWT token for the given user ID.\r\n * @param {string} userId - The user ID.\r\n * @returns {string} The generated JWT token.\r\n */\r\nexport const generateToken = (userId) => {\r\n  console.log({ userId })\r\n  return jwt.sign({ userId }, secretKey, { expiresIn: '10h' })\r\n}\r\n\r\n/**\r\n * Middleware function to authenticate a JWT token.\r\n * @param {Object} req - The request object.\r\n * @param {Object} res - The response object.\r\n * @param {Function} next - The next middleware function.\r\n */\r\nexport const authenticateToken = (req, res, next) => {\r\n  const token = req.headers.authorization\r\n  if (!token) {\r\n    return res.status(401).json({ message: 'Token de autenticacao nao fornecido' })\r\n  }\r\n\r\n  jwt.verify(token, secretKey, (err, decoded) => {\r\n    if (err) {\r\n      console.log(err)\r\n      return res.status(403).json({ message: 'Token de autenticacao invalido' })\r\n    }\r\n    req.userId = decoded.userId\r\n    console.log(req.userId)\r\n    next()\r\n  })\r\n}\r\n",
+    "static": true,
+    "longname": "E:/full-proj-softreuse/src/controllers/authenticate.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "secretKey",
+    "memberof": "src/controllers/authenticate.js",
+    "static": true,
+    "longname": "src/controllers/authenticate.js~secretKey",
+    "access": "public",
+    "export": false,
+    "importPath": "full-proj-softreuse/src/controllers/authenticate.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "function",
+    "name": "generateToken",
+    "memberof": "src/controllers/authenticate.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/authenticate.js~generateToken",
+    "access": "public",
+    "export": true,
+    "importPath": "full-proj-softreuse/src/controllers/authenticate.js",
+    "importStyle": "{generateToken}",
+    "description": "Generates a JWT token for the given user ID.",
+    "lineNumber": 10,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{string} The generated JWT token."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "userId",
+        "description": "The user ID."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "The generated JWT token."
+    }
+  },
+  {
+    "__docId__": 51,
+    "kind": "function",
+    "name": "authenticateToken",
+    "memberof": "src/controllers/authenticate.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/authenticate.js~authenticateToken",
+    "access": "public",
+    "export": true,
+    "importPath": "full-proj-softreuse/src/controllers/authenticate.js",
+    "importStyle": "{authenticateToken}",
+    "description": "Middleware function to authenticate a JWT token.",
+    "lineNumber": 21,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "req",
+        "description": "The request object."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "res",
+        "description": "The response object."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "next",
+        "description": "The next middleware function."
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "file",
+    "name": "src/controllers/login.js",
+    "content": "import LoginMethods from '../database/dbUsers.js'\r\nimport express from 'express'\r\nimport { generateToken } from './authenticate.js'\r\nimport bcrypt from 'bcrypt'\r\n\r\nconst signupRouter = express.Router()\r\nconst loginRouter = express.Router()\r\n\r\nconst db = new LoginMethods()\r\n\r\nsignupRouter.post('/', async (req, res) => {\r\n  const { username, password } = req.body\r\n  console.log('criar')\r\n  try {\r\n    const user = await db.getUser(username)\r\n    console.log(user.length)\r\n    if (user.length > 0) {\r\n      return res.status(400).json({ message: 'Usuario ja existe' })\r\n    } else {\r\n      const passwordHash = await bcrypt.hash(password, 10)\r\n      console.log('encrypted password:', password, passwordHash)\r\n      await db.createUser(username, passwordHash)\r\n\r\n      res.status(201).json({ message: 'Usuario cadastrado com sucesso' })\r\n    }\r\n  } catch (error) {\r\n    console.error('Erro ao cadastrar usuario:', error)\r\n    res.status(500).json({ message: 'Erro interno do servidor' })\r\n  }\r\n})\r\n\r\nloginRouter.post('/', async (req, res) => {\r\n  const { username, password } = req.body\r\n  console.log('login', username, password)\r\n\r\n  try {\r\n    const user = await db.getUser(username)\r\n    console.log(user)\r\n    if (!user[0]) {\r\n      return res.status(404).json({ message: 'Usuario nao encontrado' })\r\n    } else {\r\n      const match = await bcrypt.compare(password, user[0].password)\r\n      if (!match) {\r\n        return res.status(401).json({ message: 'Credenciais invalidas - Senha incorreta' })\r\n      }\r\n\r\n      const token = generateToken(user[0].id)\r\n\r\n      res.json({ token })\r\n    }\r\n  } catch (error) {\r\n    console.error('Erro ao autenticar usuario:', error)\r\n    res.status(500).json({ message: 'Erro interno do servidor' })\r\n  }\r\n})\r\n\r\nexport { signupRouter, loginRouter }\r\n",
+    "static": true,
+    "longname": "E:/full-proj-softreuse/src/controllers/login.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 53,
+    "kind": "variable",
+    "name": "db",
+    "memberof": "src/controllers/login.js",
+    "static": true,
+    "longname": "src/controllers/login.js~db",
+    "access": "public",
+    "export": false,
+    "importPath": "full-proj-softreuse/src/controllers/login.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/database/dbUsers.js~LoginMethods"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "variable",
+    "name": "signupRouter",
+    "memberof": "src/controllers/login.js",
+    "static": true,
+    "longname": "src/controllers/login.js~signupRouter",
+    "access": "public",
+    "export": true,
+    "importPath": "full-proj-softreuse/src/controllers/login.js",
+    "importStyle": "{signupRouter}",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "variable",
+    "name": "loginRouter",
+    "memberof": "src/controllers/login.js",
+    "static": true,
+    "longname": "src/controllers/login.js~loginRouter",
+    "access": "public",
+    "export": true,
+    "importPath": "full-proj-softreuse/src/controllers/login.js",
+    "importStyle": "{loginRouter}",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "file",
+    "name": "src/controllers/products.js",
+    "content": "import express from 'express';\r\nimport Authentication from './../../packages-softreuse/authentication/Authentication.js';\r\nimport { readFileSync } from \"fs\";\r\nconst variables = JSON.parse(readFileSync(\"variables.json\"));\r\n\r\nimport SalesMethods from './../database/dbSales.js';\r\n\r\n\r\nconst auth = new Authentication();\r\nauth.setSecretKey(variables['secretKey']);\r\n\r\nconst db = new SalesMethods();\r\ndb.setConnParams(variables['database']);\r\n\r\nconst productsRouter = express.Router();\r\n\r\n\r\n/**\r\n * Retrieves all products from the database.\r\n * @route GET /products\r\n * @authentication This route requires a valid access token to be provided in the request header.\r\n * @async\r\n * @param {Authorization} req.headers - The access token to authenticate the user.\r\n * @returns {Object} A list of products objects.\r\n */\r\nproductsRouter.get('/', auth.authenticateToken, async (req, res) => {\r\n    console.log('req.user:', req['userId']);\r\n    if (req['userId']) {\r\n\r\n        try {\r\n            const products = await db.getSales();\r\n            console.log(products);\r\n\r\n            const productsObj = {\r\n                product: {\r\n                    name: products[0]['name'],\r\n                    price: products[0]['price'],\r\n                    category: products[0]['category'],\r\n                },\r\n                quantity_sold: products[0]['quantity'],\r\n                total: products[0]['total'],\r\n            }\r\n            res.json(productsObj);\r\n        } catch (err) {\r\n            console.log('Error executing database query:', err);\r\n            res.status(500).json({ error: 'Internal server error' });\r\n        }\r\n    } else {\r\n        res.status(401).json({ error: 'Access denied - No token provided' })\r\n    }\r\n})\r\n\r\n/**\r\n * Creates a new sale in the database.\r\n *\r\n * @route POST /products\r\n * @authentication This route requires a valid access token to be provided in the request header.\r\n * @async\r\n * @param {Authorization} req.headers - The access token to authenticate the user.\r\n * @returns {Object} The newly created sale object.\r\n */\r\nproductsRouter.post('/', auth.authenticateToken, async (req, res) => {\r\n    if (req.user) {\r\n        try {\r\n            const inserted = await db.createSale({ product_id: req.body.product_id, quantity: req.body.quantity, total: req.body.total });\r\n            res.json(inserted);\r\n        } catch (err) {\r\n            console.log('Error executing database query:', err);\r\n            res.status(500).json({ error: 'Internal server error' });\r\n        }\r\n    } else {\r\n        console.log('Access denied - Invalid token')\r\n        res.status(401).json({ error: 'Access denied' })\r\n    }\r\n})\r\n\r\n/**\r\n * Updates a sale in the database.\r\n *\r\n * @route PUT /products/:id\r\n * @authentication This route requires a valid access token to be provided in the request header.\r\n * @async\r\n * @param {Authorization} req.headers - The access token to authenticate the user.\r\n * @returns {Object} The updated sale object.\r\n */\r\nproductsRouter.put('/', auth.authenticateToken, async (req, res) => {\r\n    if (req.user) {\r\n        try {\r\n            const updated = await db.updateSale(req.params.id, req.body);\r\n            res.json(updated);\r\n        } catch (err){\r\n            console.log('Error executing database query:', err);\r\n            res.status(500).json({ error: 'Internal server error' });\r\n        }\r\n    } else {\r\n        console.log('Access denied - Invalid token');\r\n        res.status(401).json({ error: 'Access denied' });\r\n    }\r\n})\r\n\r\n/**\r\n * Deletes a sale from the database.\r\n *\r\n * @route DELETE /products/:id\r\n * @authentication This route requires a valid access token to be provided in the request header.\r\n * @async\r\n * @param {Authorization} req.headers - The access token to authenticate the user. * \r\n * @returns {string} The success message if the sale is deleted, or an error message if the sale is not found.\r\n */\r\nproductsRouter.delete('/', auth.authenticateToken, async (req, res) => {\r\n    if (req.user) {\r\n        try {\r\n            const deleted = await db.deleteSale(req.params.id);\r\n            if (deleted.lenght === 0) {\r\n                return res.status(404).json({ message: 'Sale not found' });\r\n            } else {\r\n                res.status(200).json({ message: 'Sale deleted' });\r\n            }\r\n        } catch (err) {\r\n            console.log('Error executing database query:', err);\r\n            res.status(500).json({ error: 'Internal server error' });\r\n        }\r\n    } else {\r\n        console.log('Access denied - Invalid token');\r\n        res.status(401).json({ error: 'Access denied' });\r\n    }\r\n})\r\n\r\n\r\nexport { productsRouter };\r\n\r\n",
+    "static": true,
+    "longname": "E:/full-proj-softreuse/src/controllers/products.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 57,
+    "kind": "variable",
+    "name": "variables",
+    "memberof": "src/controllers/products.js",
+    "static": true,
+    "longname": "src/controllers/products.js~variables",
+    "access": "public",
+    "export": false,
+    "importPath": "full-proj-softreuse/src/controllers/products.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "variable",
+    "name": "auth",
+    "memberof": "src/controllers/products.js",
+    "static": true,
+    "longname": "src/controllers/products.js~auth",
+    "access": "public",
+    "export": false,
+    "importPath": "full-proj-softreuse/src/controllers/products.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "variable",
+    "name": "db",
+    "memberof": "src/controllers/products.js",
+    "static": true,
+    "longname": "src/controllers/products.js~db",
+    "access": "public",
+    "export": false,
+    "importPath": "full-proj-softreuse/src/controllers/products.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/database/dbSales.js~SalesMethods"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "variable",
+    "name": "productsRouter",
+    "memberof": "src/controllers/products.js",
+    "static": true,
+    "longname": "src/controllers/products.js~productsRouter",
+    "access": "public",
+    "export": true,
+    "importPath": "full-proj-softreuse/src/controllers/products.js",
+    "importStyle": "{productsRouter}",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "file",
+    "name": "src/controllers/sales.js",
+    "content": "import express from 'express';\r\nimport Authentication from './../../packages-softreuse/authentication/Authentication.js';\r\nimport { readFileSync } from \"fs\";\r\nconst variables = JSON.parse(readFileSync(\"variables.json\"));\r\n\r\nimport SalesMethods from './../database/dbSales.js';\r\n\r\n\r\nconst auth = new Authentication();\r\nauth.setSecretKey(variables['secretKey']);\r\n\r\nconst db = new SalesMethods();\r\ndb.setConnParams(variables['database']);\r\n\r\nconst salesRouter = express.Router();\r\n\r\n\r\n/**\r\n * Retrieves all sales from the database.\r\n * @route GET /sales\r\n * @authentication This route requires a valid access token to be provided in the request header.\r\n * @async\r\n * @param {Authorization} req.headers - The access token to authenticate the user.\r\n * @returns {Object} A list of sales objects.\r\n */\r\nsalesRouter.get('/', auth.authenticateToken, async (req, res) => {\r\n    console.log('req.user:', req['userId']);\r\n    if (req['userId']) {\r\n\r\n        try {\r\n            const sales = await db.getSales();\r\n            console.log(sales);\r\n\r\n            const salesObj = {\r\n                product: {\r\n                    name: sales[0]['name'],\r\n                    price: sales[0]['price'],\r\n                    category: sales[0]['category'],\r\n                },\r\n                quantity_sold: sales[0]['quantity'],\r\n                total: sales[0]['total'],\r\n            }\r\n            res.json(salesObj);\r\n        } catch (err) {\r\n            console.log('Error executing database query:', err);\r\n            res.status(500).json({ error: 'Internal server error' });\r\n        }\r\n    } else {\r\n        res.status(401).json({ error: 'Access denied - No token provided' })\r\n    }\r\n})\r\n\r\n/**\r\n * Creates a new sale in the database.\r\n *\r\n * @route POST /sales\r\n * @authentication This route requires a valid access token to be provided in the request header.\r\n * @async\r\n * @param {Authorization} req.headers - The access token to authenticate the user.\r\n * @returns {Object} The newly created sale object.\r\n */\r\nsalesRouter.post('/', auth.authenticateToken, async (req, res) => {\r\n    if (req.user) {\r\n        try {\r\n            const inserted = await db.createSale({ product_id: req.body.product_id, quantity: req.body.quantity, total: req.body.total });\r\n            res.json(inserted);\r\n        } catch (err) {\r\n            console.log('Error executing database query:', err);\r\n            res.status(500).json({ error: 'Internal server error' });\r\n        }\r\n    } else {\r\n        console.log('Access denied - Invalid token')\r\n        res.status(401).json({ error: 'Access denied' })\r\n    }\r\n})\r\n\r\n/**\r\n * Updates a sale in the database.\r\n *\r\n * @route PUT /sales/:id\r\n * @authentication This route requires a valid access token to be provided in the request header.\r\n * @async\r\n * @param {Authorization} req.headers - The access token to authenticate the user.\r\n * @returns {Object} The updated sale object.\r\n */\r\nsalesRouter.put('/', auth.authenticateToken, async (req, res) => {\r\n    if (req.user) {\r\n        try {\r\n            const updated = await db.updateSale(req.params.id, req.body);\r\n            res.json(updated);\r\n        } catch (err){\r\n            console.log('Error executing database query:', err);\r\n            res.status(500).json({ error: 'Internal server error' });\r\n        }\r\n    } else {\r\n        console.log('Access denied - Invalid token');\r\n        res.status(401).json({ error: 'Access denied' });\r\n    }\r\n})\r\n\r\n/**\r\n * Deletes a sale from the database.\r\n *\r\n * @route DELETE /sales/:id\r\n * @authentication This route requires a valid access token to be provided in the request header.\r\n * @async\r\n * @param {Authorization} req.headers - The access token to authenticate the user. * \r\n * @returns {string} The success message if the sale is deleted, or an error message if the sale is not found.\r\n */\r\nsalesRouter.delete('/', auth.authenticateToken, async (req, res) => {\r\n    if (req.user) {\r\n        try {\r\n            const deleted = await db.deleteSale(req.params.id);\r\n            if (deleted.lenght === 0) {\r\n                return res.status(404).json({ message: 'Sale not found' });\r\n            } else {\r\n                res.status(200).json({ message: 'Sale deleted' });\r\n            }\r\n        } catch (err) {\r\n            console.log('Error executing database query:', err);\r\n            res.status(500).json({ error: 'Internal server error' });\r\n        }\r\n    } else {\r\n        console.log('Access denied - Invalid token');\r\n        res.status(401).json({ error: 'Access denied' });\r\n    }\r\n})\r\n\r\n\r\nexport { salesRouter };\r\n\r\n",
+    "static": true,
+    "longname": "E:/full-proj-softreuse/src/controllers/sales.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 62,
+    "kind": "variable",
+    "name": "variables",
+    "memberof": "src/controllers/sales.js",
+    "static": true,
+    "longname": "src/controllers/sales.js~variables",
+    "access": "public",
+    "export": false,
+    "importPath": "full-proj-softreuse/src/controllers/sales.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "variable",
+    "name": "auth",
+    "memberof": "src/controllers/sales.js",
+    "static": true,
+    "longname": "src/controllers/sales.js~auth",
+    "access": "public",
+    "export": false,
+    "importPath": "full-proj-softreuse/src/controllers/sales.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "variable",
+    "name": "db",
+    "memberof": "src/controllers/sales.js",
+    "static": true,
+    "longname": "src/controllers/sales.js~db",
+    "access": "public",
+    "export": false,
+    "importPath": "full-proj-softreuse/src/controllers/sales.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/database/dbSales.js~SalesMethods"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 65,
+    "kind": "variable",
+    "name": "salesRouter",
+    "memberof": "src/controllers/sales.js",
+    "static": true,
+    "longname": "src/controllers/sales.js~salesRouter",
+    "access": "public",
+    "export": true,
+    "importPath": "full-proj-softreuse/src/controllers/sales.js",
+    "importStyle": "{salesRouter}",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "file",
+    "name": "src/database/dbBase.js",
+    "content": "import mysql from 'mysql2/promise'\r\n\r\n/**\r\n * Represents a base class for database operations.\r\n */\r\nexport default class Base {\r\n  connParams\r\n\r\n  setConnParams = (params) => {\r\n    this.connParams = params\r\n  }\r\n\r\n  /**\r\n   * Runs a SQL query on the database.\r\n   * @param {string} sql - The SQL query to execute.\r\n   * @returns {Promise<Array>} - A promise that resolves to the query results.\r\n   */\r\n  runQuery = async (sql) => {\r\n    if (!this.connParams) {\r\n      throw new Error('Connection parameters not set!')\r\n    }\r\n\r\n    const connection = await mysql.createConnection(this.connParams)\r\n    try {\r\n      const [results, fields] = await connection.query(sql)\r\n      console.log('fields:', fields)\r\n      return results\r\n    } catch (e) {\r\n      console.log('Error executing the query:', e)\r\n    }\r\n  }\r\n}\r\n",
+    "static": true,
+    "longname": "E:/full-proj-softreuse/src/database/dbBase.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 67,
+    "kind": "class",
+    "name": "Base",
+    "memberof": "src/database/dbBase.js",
+    "static": true,
+    "longname": "src/database/dbBase.js~Base",
+    "access": "public",
+    "export": true,
+    "importPath": "full-proj-softreuse/src/database/dbBase.js",
+    "importStyle": "Base",
+    "description": "Represents a base class for database operations.",
+    "lineNumber": 6,
+    "interface": false
+  },
+  {
+    "__docId__": 68,
+    "kind": "member",
+    "name": "connParams",
+    "memberof": "src/database/dbBase.js~Base",
+    "static": false,
+    "longname": "src/database/dbBase.js~Base#connParams",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "member",
+    "name": "setConnParams",
+    "memberof": "src/database/dbBase.js~Base",
+    "static": false,
+    "longname": "src/database/dbBase.js~Base#setConnParams",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "member",
+    "name": "runQuery",
+    "memberof": "src/database/dbBase.js~Base",
+    "static": false,
+    "longname": "src/database/dbBase.js~Base#runQuery",
+    "access": "public",
+    "description": "Runs a SQL query on the database.",
+    "lineNumber": 18,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<Array>} - A promise that resolves to the query results."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sql",
+        "description": "The SQL query to execute."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<Array>"
+      ],
+      "spread": false,
+      "description": "A promise that resolves to the query results."
+    },
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 72,
+    "kind": "file",
+    "name": "src/database/dbProduct.js",
+    "content": "import Base from './dbBase.js'\r\n\r\n\r\n/*\r\n      {\r\n          product: 'Product name',\r\n          category: 'Category name',\r\n          price: 99.99,\r\n          available: 5\r\n      }\r\n  */\r\n\r\n\r\n\r\nimport Base from './dbBase.js'\r\n\r\nexport default class ProductsMethods extends Base {\r\n    /**\r\n       * Class representing products methods.\r\n       * @extends Base\r\n       */\r\n\r\n    /**\r\n       * Get products based on the provided parameters.\r\n       * @param {Object} params - The parameters for filtering the products.\r\n       * @param {number} params.product_id - The product ID to filter by.\r\n       * @param {number} params.quantity - The quantity to filter by.\r\n       * @param {number} params.total - The total to filter by.\r\n       * @returns {Promise<Array>} - The products matching the provided parameters.\r\n       */\r\n    getProducts = async (params) => {\r\n        let query = 'SELECT * FROM products as sal'\r\n        const joinProduct = ' INNER JOIN products as prod ON sal.product_id = prod.id'\r\n\r\n        if (params && (params.product_id || params.quantity || params.total)) {\r\n            query += ' WHERE'\r\n\r\n            const conditions = []\r\n\r\n            if (params.quantity) {\r\n                conditions.push(`quantity = ${params.quantity}`)\r\n            }\r\n            if (params.total) {\r\n                conditions.push(`total = ${params.total}`)\r\n            }\r\n\r\n            if (params.product_id) {\r\n                conditions.push(`product_id = ${params.product_id}`)\r\n            }\r\n\r\n            query += ` ${conditions.join(' AND ')}`\r\n        }\r\n\r\n        query += joinProduct\r\n        console.log('query:', query)\r\n        const products = await this.runQuery(query)\r\n        return products\r\n    }\r\n\r\n    /**\r\n       * Create a new sale.\r\n       * @param {Object} params - The parameters for creating a sale.\r\n       * @param {number} params.product_id - The product ID of the sale.\r\n       * @param {number} params.quantity - The quantity of the sale.\r\n       * @param {number} params.total - The total amount of the sale.\r\n       * @returns {Promise<Object>} - The result of the sale creation.\r\n       */\r\n    createSale = async (params) => {\r\n        if (params && params.product_id && params.quantity && params.total) {\r\n            const query = `INSERT INTO products (product_id, quantity, total) VALUES (${params.product_id}, ${params.quantity}, ${params.total})`\r\n            const result = await this.runQuery(query)\r\n            return result\r\n        } else {\r\n            return [404, 'Missing parameters (all fields are mandatory to save a sale)']\r\n        }\r\n    }\r\n\r\n    /**\r\n       * Update an existing new sale.\r\n       * @param {Object} params - The parameters for creating a sale.\r\n       * @param {number} params.product_id - The product ID of the sale.\r\n       * @param {number} params.quantity - The quantity of the sale.\r\n       * @param {number} params.total - The total amount of the sale.\r\n       * @returns {Promise<Object>} - The result of the sale change.\r\n       */\r\n    updateSale = async (id, params) => {\r\n        if (params && (params.product_id || params.quantity || params.total)) {\r\n            let query\r\n            if (params.product_id) {\r\n                query += `UPDATE products SET product_id = ${params.product_id} WHERE id = ${id};   `\r\n            }\r\n            if (params.quantity) {\r\n                query += `UPDATE products SET quantity = ${params.quantity} WHERE id = ${id};    `\r\n            }\r\n            if (params.total) {\r\n                query += `UPDATE products SET total = ${params.total} WHERE id = ${id}; `\r\n            }\r\n            const result = await this.runQuery(query)\r\n            return result\r\n        } else {\r\n            return [404, 'Missing parameters (at least one field is mandatory to update a sale)']\r\n        }\r\n    }\r\n\r\n    /**\r\n       * Delete an new sale.\r\n       * @param {Object} params - The parameters for creating a sale.\r\n       * @param {number} params.product_id - The product ID of the sale.\r\n       * @param {number} params.quantity - The quantity of the sale.\r\n       * @param {number} params.total - The total amount of the sale.\r\n       * @returns {Promise<Object>} - The result of the sale creation.\r\n       */\r\n    deleteSale = async (id) => {\r\n        const exists = await this.getProducts({ id })\r\n        if (exists) {\r\n            const query = `DELETE FROM products WHERE id = ${id}`\r\n            const result = await this.runQuery(query)\r\n            return result\r\n        } else {\r\n            return [404, `Sale with Id = ${id} not found`]\r\n        }\r\n    }\r\n}\r\n",
+    "static": true,
+    "longname": "E:/full-proj-softreuse/src/database/dbProduct.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 73,
+    "kind": "class",
+    "name": "ProductsMethods",
+    "memberof": "src/database/dbProduct.js",
+    "static": true,
+    "longname": "src/database/dbProduct.js~ProductsMethods",
+    "access": "public",
+    "export": true,
+    "importPath": "full-proj-softreuse/src/database/dbProduct.js",
+    "importStyle": "ProductsMethods",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/database/dbBase.js~Base"
+    ]
+  },
+  {
+    "__docId__": 74,
+    "kind": "member",
+    "name": "getProducts",
+    "memberof": "src/database/dbProduct.js~ProductsMethods",
+    "static": false,
+    "longname": "src/database/dbProduct.js~ProductsMethods#getProducts",
+    "access": "public",
+    "description": "Get products based on the provided parameters.",
+    "lineNumber": 31,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<Array>} - The products matching the provided parameters."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params",
+        "description": "The parameters for filtering the products."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.product_id",
+        "description": "The product ID to filter by."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.quantity",
+        "description": "The quantity to filter by."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.total",
+        "description": "The total to filter by."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<Array>"
+      ],
+      "spread": false,
+      "description": "The products matching the provided parameters."
+    },
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 75,
+    "kind": "member",
+    "name": "createSale",
+    "memberof": "src/database/dbProduct.js~ProductsMethods",
+    "static": false,
+    "longname": "src/database/dbProduct.js~ProductsMethods#createSale",
+    "access": "public",
+    "description": "Create a new sale.",
+    "lineNumber": 68,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<Object>} - The result of the sale creation."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params",
+        "description": "The parameters for creating a sale."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.product_id",
+        "description": "The product ID of the sale."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.quantity",
+        "description": "The quantity of the sale."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.total",
+        "description": "The total amount of the sale."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<Object>"
+      ],
+      "spread": false,
+      "description": "The result of the sale creation."
+    },
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "member",
+    "name": "updateSale",
+    "memberof": "src/database/dbProduct.js~ProductsMethods",
+    "static": false,
+    "longname": "src/database/dbProduct.js~ProductsMethods#updateSale",
+    "access": "public",
+    "description": "Update an existing new sale.",
+    "lineNumber": 86,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<Object>} - The result of the sale change."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params",
+        "description": "The parameters for creating a sale."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.product_id",
+        "description": "The product ID of the sale."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.quantity",
+        "description": "The quantity of the sale."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.total",
+        "description": "The total amount of the sale."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<Object>"
+      ],
+      "spread": false,
+      "description": "The result of the sale change."
+    },
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 77,
+    "kind": "member",
+    "name": "deleteSale",
+    "memberof": "src/database/dbProduct.js~ProductsMethods",
+    "static": false,
+    "longname": "src/database/dbProduct.js~ProductsMethods#deleteSale",
+    "access": "public",
+    "description": "Delete an new sale.",
+    "lineNumber": 113,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<Object>} - The result of the sale creation."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params",
+        "description": "The parameters for creating a sale."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.product_id",
+        "description": "The product ID of the sale."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.quantity",
+        "description": "The quantity of the sale."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.total",
+        "description": "The total amount of the sale."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<Object>"
+      ],
+      "spread": false,
+      "description": "The result of the sale creation."
+    },
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 78,
+    "kind": "file",
+    "name": "src/database/dbSales.js",
+    "content": "import Base from './dbBase.js'\r\n\r\nexport default class SalesMethods extends Base {\r\n  /**\r\n     * Class representing sales methods.\r\n     * @extends Base\r\n     */\r\n\r\n  /**\r\n     * Get sales based on the provided parameters.\r\n     * @param {Object} params - The parameters for filtering the sales.\r\n     * @param {number} params.product_id - The product ID to filter by.\r\n     * @param {number} params.quantity - The quantity to filter by.\r\n     * @param {number} params.total - The total to filter by.\r\n     * @returns {Promise<Array>} - The sales matching the provided parameters.\r\n     */\r\n  getSales = async (params) => {\r\n    let query = 'SELECT * FROM sales as sal'\r\n    const joinProduct = ' INNER JOIN products as prod ON sal.product_id = prod.id'\r\n\r\n    if (params && (params.product_id || params.quantity || params.total)) {\r\n      query += ' WHERE'\r\n\r\n      const conditions = []\r\n\r\n      if (params.quantity) {\r\n        conditions.push(`quantity = ${params.quantity}`)\r\n      }\r\n      if (params.total) {\r\n        conditions.push(`total = ${params.total}`)\r\n      }\r\n\r\n      if (params.product_id) {\r\n        conditions.push(`product_id = ${params.product_id}`)\r\n      }\r\n\r\n      query += ` ${conditions.join(' AND ')}`\r\n    }\r\n\r\n    query += joinProduct\r\n    console.log('query:', query)\r\n    const sales = await this.runQuery(query)\r\n    return sales\r\n  }\r\n\r\n  /**\r\n     * Create a new sale.\r\n     * @param {Object} params - The parameters for creating a sale.\r\n     * @param {number} params.product_id - The product ID of the sale.\r\n     * @param {number} params.quantity - The quantity of the sale.\r\n     * @param {number} params.total - The total amount of the sale.\r\n     * @returns {Promise<Object>} - The result of the sale creation.\r\n     */\r\n  createSale = async (params) => {\r\n    if (params && params.product_id && params.quantity && params.total) {\r\n      const query = `INSERT INTO sales (product_id, quantity, total) VALUES (${params.product_id}, ${params.quantity}, ${params.total})`\r\n      const result = await this.runQuery(query)\r\n      return result\r\n    } else {\r\n      return [404, 'Missing parameters (all fields are mandatory to save a sale)']\r\n    }\r\n  }\r\n\r\n  /**\r\n     * Update an existing new sale.\r\n     * @param {Object} params - The parameters for creating a sale.\r\n     * @param {number} params.product_id - The product ID of the sale.\r\n     * @param {number} params.quantity - The quantity of the sale.\r\n     * @param {number} params.total - The total amount of the sale.\r\n     * @returns {Promise<Object>} - The result of the sale change.\r\n     */\r\n  updateSale = async (id, params) => {\r\n    if (params && (params.product_id || params.quantity || params.total)) {\r\n      let query\r\n      if (params.product_id) {\r\n        query += `UPDATE sales SET product_id = ${params.product_id} WHERE id = ${id};   `\r\n      }\r\n      if (params.quantity) {\r\n        query += `UPDATE sales SET quantity = ${params.quantity} WHERE id = ${id};    `\r\n      }\r\n      if (params.total) {\r\n        query += `UPDATE sales SET total = ${params.total} WHERE id = ${id}; `\r\n      }\r\n      const result = await this.runQuery(query)\r\n      return result\r\n    } else {\r\n      return [404, 'Missing parameters (at least one field is mandatory to update a sale)']\r\n    }\r\n  }\r\n\r\n  /**\r\n     * Delete an new sale.\r\n     * @param {Object} params - The parameters for creating a sale.\r\n     * @param {number} params.product_id - The product ID of the sale.\r\n     * @param {number} params.quantity - The quantity of the sale.\r\n     * @param {number} params.total - The total amount of the sale.\r\n     * @returns {Promise<Object>} - The result of the sale creation.\r\n     */\r\n  deleteSale = async (id) => {\r\n    const exists = await this.getSales({ id })\r\n    if (exists) {\r\n      const query = `DELETE FROM sales WHERE id = ${id}`\r\n      const result = await this.runQuery(query)\r\n      return result\r\n    } else {\r\n      return [404, `Sale with Id = ${id} not found`]\r\n    }\r\n  }\r\n}\r\n",
+    "static": true,
+    "longname": "E:/full-proj-softreuse/src/database/dbSales.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 79,
+    "kind": "class",
+    "name": "SalesMethods",
+    "memberof": "src/database/dbSales.js",
+    "static": true,
+    "longname": "src/database/dbSales.js~SalesMethods",
+    "access": "public",
+    "export": true,
+    "importPath": "full-proj-softreuse/src/database/dbSales.js",
+    "importStyle": "SalesMethods",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/database/dbBase.js~Base"
+    ]
+  },
+  {
+    "__docId__": 80,
+    "kind": "member",
+    "name": "getSales",
+    "memberof": "src/database/dbSales.js~SalesMethods",
+    "static": false,
+    "longname": "src/database/dbSales.js~SalesMethods#getSales",
+    "access": "public",
+    "description": "Get sales based on the provided parameters.",
+    "lineNumber": 17,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<Array>} - The sales matching the provided parameters."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params",
+        "description": "The parameters for filtering the sales."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.product_id",
+        "description": "The product ID to filter by."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.quantity",
+        "description": "The quantity to filter by."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.total",
+        "description": "The total to filter by."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<Array>"
+      ],
+      "spread": false,
+      "description": "The sales matching the provided parameters."
+    },
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 81,
+    "kind": "member",
+    "name": "createSale",
+    "memberof": "src/database/dbSales.js~SalesMethods",
+    "static": false,
+    "longname": "src/database/dbSales.js~SalesMethods#createSale",
+    "access": "public",
+    "description": "Create a new sale.",
+    "lineNumber": 54,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<Object>} - The result of the sale creation."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params",
+        "description": "The parameters for creating a sale."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.product_id",
+        "description": "The product ID of the sale."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.quantity",
+        "description": "The quantity of the sale."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.total",
+        "description": "The total amount of the sale."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<Object>"
+      ],
+      "spread": false,
+      "description": "The result of the sale creation."
+    },
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 82,
+    "kind": "member",
+    "name": "updateSale",
+    "memberof": "src/database/dbSales.js~SalesMethods",
+    "static": false,
+    "longname": "src/database/dbSales.js~SalesMethods#updateSale",
+    "access": "public",
+    "description": "Update an existing new sale.",
+    "lineNumber": 72,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<Object>} - The result of the sale change."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params",
+        "description": "The parameters for creating a sale."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.product_id",
+        "description": "The product ID of the sale."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.quantity",
+        "description": "The quantity of the sale."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.total",
+        "description": "The total amount of the sale."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<Object>"
+      ],
+      "spread": false,
+      "description": "The result of the sale change."
+    },
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 83,
+    "kind": "member",
+    "name": "deleteSale",
+    "memberof": "src/database/dbSales.js~SalesMethods",
+    "static": false,
+    "longname": "src/database/dbSales.js~SalesMethods#deleteSale",
+    "access": "public",
+    "description": "Delete an new sale.",
+    "lineNumber": 99,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<Object>} - The result of the sale creation."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params",
+        "description": "The parameters for creating a sale."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.product_id",
+        "description": "The product ID of the sale."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.quantity",
+        "description": "The quantity of the sale."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params.total",
+        "description": "The total amount of the sale."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<Object>"
+      ],
+      "spread": false,
+      "description": "The result of the sale creation."
+    },
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 84,
+    "kind": "file",
+    "name": "src/database/dbUsers.js",
+    "content": "import Base from './dbBase.js'\r\n\r\nexport default class LoginMethods extends Base {\r\n  getUser = async (username) => {\r\n    const user = await this.runQuery(`SELECT * FROM users WHERE username = '${username}'`)\r\n    console.log('user:', user)\r\n    return user\r\n  }\r\n\r\n  createUser = async (username, password) => {\r\n    await this.runQuery(`INSERT INTO users (isactive, username, password) VALUES (true, '${username}', '${password}');`)\r\n  }\r\n}\r\n",
+    "static": true,
+    "longname": "E:/full-proj-softreuse/src/database/dbUsers.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 85,
+    "kind": "class",
+    "name": "LoginMethods",
+    "memberof": "src/database/dbUsers.js",
+    "static": true,
+    "longname": "src/database/dbUsers.js~LoginMethods",
+    "access": "public",
+    "export": true,
+    "importPath": "full-proj-softreuse/src/database/dbUsers.js",
+    "importStyle": "LoginMethods",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/database/dbBase.js~Base"
+    ]
+  },
+  {
+    "__docId__": 86,
+    "kind": "member",
+    "name": "getUser",
+    "memberof": "src/database/dbUsers.js~LoginMethods",
+    "static": false,
+    "longname": "src/database/dbUsers.js~LoginMethods#getUser",
+    "access": "public",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 87,
+    "kind": "member",
+    "name": "createUser",
+    "memberof": "src/database/dbUsers.js~LoginMethods",
+    "static": false,
+    "longname": "src/database/dbUsers.js~LoginMethods#createUser",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 88,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "import express from 'express';\r\nimport { readFileSync } from \"fs\";\r\nconst variables = JSON.parse(readFileSync(\"variables.json\"));\r\n\r\nimport { db, auth, signupRouter, loginRouter } from './../packages-softreuse/authentication/loginRoutes.js';\r\nimport { salesRouter } from './controllers/sales.js';\r\n\r\n// Set the secret key for authentication\r\nauth.setSecretKey(variables['secretKey']);\r\n\r\n// Set the database parameters\r\nconst dbParams = variables['database'];\r\ndb.setDbParams(dbParams);\r\n\r\n\r\nconst app = express();\r\nconst PORT = 3000;\r\n\r\napp.use(express.json());\r\n\r\n// Routes\r\napp.use('/signup', signupRouter);\r\napp.use('/login', loginRouter);\r\napp.use('/sales', salesRouter);\r\n\r\n// Endpoint not found handler\r\napp.use((req, res) => {\r\n    res.status(404).json({ message: 'Endpoint não encontrado' });\r\n});\r\n\r\n// Error handling middleware\r\napp.use((err, req, res) => {\r\n    console.error(err.stack);\r\n    res.status(500).json({ message: 'Algo deu errado!' });\r\n});\r\n\r\n\r\n// Start the server\r\napp.listen(PORT, () => {\r\n  console.log(`Servidor rodando em http://localhost:${PORT}`)\r\n})\r\n",
+    "static": true,
+    "longname": "E:/full-proj-softreuse/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 89,
+    "kind": "variable",
+    "name": "variables",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~variables",
+    "access": "public",
+    "export": false,
+    "importPath": "full-proj-softreuse/src/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 90,
+    "kind": "variable",
+    "name": "dbParams",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~dbParams",
+    "access": "public",
+    "export": false,
+    "importPath": "full-proj-softreuse/src/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 91,
+    "kind": "variable",
+    "name": "app",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~app",
+    "access": "public",
+    "export": false,
+    "importPath": "full-proj-softreuse/src/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 92,
+    "kind": "variable",
+    "name": "PORT",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~PORT",
+    "access": "public",
+    "export": false,
+    "importPath": "full-proj-softreuse/src/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "kind": "index",
+    "content": "# Software Reusability Class\r\n\r\n## Introduction\r\n\r\nThis is a simple Express.js application that provides authentication and sales routes. The application is designed to run on port 3000.\r\n\r\n## Structure\r\n\r\nThe source project is inside `src` folder, and is structured as follows:\r\n\r\n- `index.js`: This is the entry point of the application. It sets up the Express server, middleware, and routes.\r\n\r\n### Controllers\r\n\r\n- `authenticate.js`: This file contains the methods related to token authentication, such as token generation and validation.\r\n- `sales.js`: This file contains the routes for handling sales-related requests.\r\n- `login.js`: This file contains the routes for user login and signup\r\n\r\n### Database\r\n\r\n- `dbUsers`: This file contains methods with queries related to users on database\r\n- `dbProduct`: This file contains methods with queries related to product on database\r\n- `dbSales`: This file contains methods with queries related to sales table on database\r\n- `dbBase`: This file contains base methods to be used in all other database files.\r\n\r\n## Getting Started\r\n\r\nTo get started with this project, follow these steps:\r\n\r\n1. Clone the repository to your local machine.\r\n2. Navigate to the project directory.\r\n3. Install the necessary dependencies with `npm install`.\r\n4. Start the server with `npm start`.\r\n\r\nThe server will start running at `http://localhost:3000`.\r\n\r\n## Goals\r\n\r\nThe goal of this project is to provide a simple, scalable template for an Express.js application with user authentication and sales functionality.\r\n",
+    "longname": "E:\\full-proj-softreuse\\README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\r\n  \"name\": \"full-proj-softreuse\",\r\n  \"version\": \"1.0.0\",\r\n  \"description\": \"\",\r\n  \"main\": \"index.js\",\r\n  \"type\": \"module\",\r\n  \"presets\": [\r\n    \"@babel/preset-env\"\r\n  ],\r\n  \"directories\": {\r\n    \"test\": \"tests\"\r\n  },\r\n  \"scripts\": {\r\n    \"start\": \"node src/index.js\",\r\n    \"lint\": \"eslint src\",\r\n    \"build\": \"babel src --out-dir dist\",\r\n    \"dev\": \"nodemon --exec babel-node src/index.js\",\r\n    \"tests\": \"robot --outputdir tests/report --report index tests/suites\"\r\n  },\r\n  \"author\": \"Laura Castro\",\r\n  \"license\": \"ISC\",\r\n  \"dependencies\": {\r\n    \"@babel/eslint-parser\": \"^7.24.5\",\r\n    \"bcrypt\": \"^5.1.1\",\r\n    \"body-parser\": \"^1.20.2\",\r\n    \"esdoc\": \"^1.1.0\",\r\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\r\n    \"esdoc-standard-plugin\": \"^1.0.0\",\r\n    \"express\": \"^4.19.2\",\r\n    \"jsonwebtoken\": \"^9.0.2\",\r\n    \"mysql2\": \"^3.9.7\",\r\n    \"nodemon\": \"^3.1.0\"\r\n  },\r\n  \"devDependencies\": {\r\n    \"@babel/cli\": \"^7.24.5\",\r\n    \"@babel/core\": \"^7.24.5\",\r\n    \"@babel/node\": \"^7.23.9\",\r\n    \"@babel/preset-env\": \"^7.24.5\",\r\n    \"@eslint/js\": \"^9.3.0\",\r\n    \"eslint\": \"^9.3.0\",\r\n    \"globals\": \"^15.3.0\"\r\n  }\r\n}\r\n",
+    "longname": "E:\\full-proj-softreuse\\package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/controllers/login.js | full-proj-softreuse</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">controllers</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-authenticateToken">authenticateToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-generateToken">generateToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-loginRouter">loginRouter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-signupRouter">signupRouter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-productsRouter">productsRouter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-salesRouter">salesRouter</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#database">database</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/database/dbBase.js~Base.html">Base</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/database/dbProduct.js~ProductsMethods.html">ProductsMethods</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/database/dbSales.js~SalesMethods.html">SalesMethods</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/database/dbUsers.js~LoginMethods.html">LoginMethods</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/controllers/login.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import LoginMethods from &apos;../database/dbUsers.js&apos;
+import express from &apos;express&apos;
+import { generateToken } from &apos;./authenticate.js&apos;
+import bcrypt from &apos;bcrypt&apos;
+
+const signupRouter = express.Router()
+const loginRouter = express.Router()
+
+const db = new LoginMethods()
+
+signupRouter.post(&apos;/&apos;, async (req, res) =&gt; {
+  const { username, password } = req.body
+  console.log(&apos;criar&apos;)
+  try {
+    const user = await db.getUser(username)
+    console.log(user.length)
+    if (user.length &gt; 0) {
+      return res.status(400).json({ message: &apos;Usuario ja existe&apos; })
+    } else {
+      const passwordHash = await bcrypt.hash(password, 10)
+      console.log(&apos;encrypted password:&apos;, password, passwordHash)
+      await db.createUser(username, passwordHash)
+
+      res.status(201).json({ message: &apos;Usuario cadastrado com sucesso&apos; })
+    }
+  } catch (error) {
+    console.error(&apos;Erro ao cadastrar usuario:&apos;, error)
+    res.status(500).json({ message: &apos;Erro interno do servidor&apos; })
+  }
+})
+
+loginRouter.post(&apos;/&apos;, async (req, res) =&gt; {
+  const { username, password } = req.body
+  console.log(&apos;login&apos;, username, password)
+
+  try {
+    const user = await db.getUser(username)
+    console.log(user)
+    if (!user[0]) {
+      return res.status(404).json({ message: &apos;Usuario nao encontrado&apos; })
+    } else {
+      const match = await bcrypt.compare(password, user[0].password)
+      if (!match) {
+        return res.status(401).json({ message: &apos;Credenciais invalidas - Senha incorreta&apos; })
+      }
+
+      const token = generateToken(user[0].id)
+
+      res.json({ token })
+    }
+  } catch (error) {
+    console.error(&apos;Erro ao autenticar usuario:&apos;, error)
+    res.status(500).json({ message: &apos;Erro interno do servidor&apos; })
+  }
+})
+
+export { signupRouter, loginRouter }
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

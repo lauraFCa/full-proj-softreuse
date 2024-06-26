@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/controllers/products.js | full-proj-softreuse</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">controllers</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-authenticateToken">authenticateToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-generateToken">generateToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-loginRouter">loginRouter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-signupRouter">signupRouter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-productsRouter">productsRouter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-salesRouter">salesRouter</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#database">database</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/database/dbBase.js~Base.html">Base</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/database/dbProduct.js~ProductsMethods.html">ProductsMethods</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/database/dbSales.js~SalesMethods.html">SalesMethods</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/database/dbUsers.js~LoginMethods.html">LoginMethods</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/controllers/products.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import express from &apos;express&apos;;
+import Authentication from &apos;./../../packages-softreuse/authentication/Authentication.js&apos;;
+import { readFileSync } from &quot;fs&quot;;
+const variables = JSON.parse(readFileSync(&quot;variables.json&quot;));
+
+import SalesMethods from &apos;./../database/dbSales.js&apos;;
+
+
+const auth = new Authentication();
+auth.setSecretKey(variables[&apos;secretKey&apos;]);
+
+const db = new SalesMethods();
+db.setConnParams(variables[&apos;database&apos;]);
+
+const productsRouter = express.Router();
+
+
+/**
+ * Retrieves all products from the database.
+ * @route GET /products
+ * @authentication This route requires a valid access token to be provided in the request header.
+ * @async
+ * @param {Authorization} req.headers - The access token to authenticate the user.
+ * @returns {Object} A list of products objects.
+ */
+productsRouter.get(&apos;/&apos;, auth.authenticateToken, async (req, res) =&gt; {
+    console.log(&apos;req.user:&apos;, req[&apos;userId&apos;]);
+    if (req[&apos;userId&apos;]) {
+
+        try {
+            const products = await db.getSales();
+            console.log(products);
+
+            const productsObj = {
+                product: {
+                    name: products[0][&apos;name&apos;],
+                    price: products[0][&apos;price&apos;],
+                    category: products[0][&apos;category&apos;],
+                },
+                quantity_sold: products[0][&apos;quantity&apos;],
+                total: products[0][&apos;total&apos;],
+            }
+            res.json(productsObj);
+        } catch (err) {
+            console.log(&apos;Error executing database query:&apos;, err);
+            res.status(500).json({ error: &apos;Internal server error&apos; });
+        }
+    } else {
+        res.status(401).json({ error: &apos;Access denied - No token provided&apos; })
+    }
+})
+
+/**
+ * Creates a new sale in the database.
+ *
+ * @route POST /products
+ * @authentication This route requires a valid access token to be provided in the request header.
+ * @async
+ * @param {Authorization} req.headers - The access token to authenticate the user.
+ * @returns {Object} The newly created sale object.
+ */
+productsRouter.post(&apos;/&apos;, auth.authenticateToken, async (req, res) =&gt; {
+    if (req.user) {
+        try {
+            const inserted = await db.createSale({ product_id: req.body.product_id, quantity: req.body.quantity, total: req.body.total });
+            res.json(inserted);
+        } catch (err) {
+            console.log(&apos;Error executing database query:&apos;, err);
+            res.status(500).json({ error: &apos;Internal server error&apos; });
+        }
+    } else {
+        console.log(&apos;Access denied - Invalid token&apos;)
+        res.status(401).json({ error: &apos;Access denied&apos; })
+    }
+})
+
+/**
+ * Updates a sale in the database.
+ *
+ * @route PUT /products/:id
+ * @authentication This route requires a valid access token to be provided in the request header.
+ * @async
+ * @param {Authorization} req.headers - The access token to authenticate the user.
+ * @returns {Object} The updated sale object.
+ */
+productsRouter.put(&apos;/&apos;, auth.authenticateToken, async (req, res) =&gt; {
+    if (req.user) {
+        try {
+            const updated = await db.updateSale(req.params.id, req.body);
+            res.json(updated);
+        } catch (err){
+            console.log(&apos;Error executing database query:&apos;, err);
+            res.status(500).json({ error: &apos;Internal server error&apos; });
+        }
+    } else {
+        console.log(&apos;Access denied - Invalid token&apos;);
+        res.status(401).json({ error: &apos;Access denied&apos; });
+    }
+})
+
+/**
+ * Deletes a sale from the database.
+ *
+ * @route DELETE /products/:id
+ * @authentication This route requires a valid access token to be provided in the request header.
+ * @async
+ * @param {Authorization} req.headers - The access token to authenticate the user. * 
+ * @returns {string} The success message if the sale is deleted, or an error message if the sale is not found.
+ */
+productsRouter.delete(&apos;/&apos;, auth.authenticateToken, async (req, res) =&gt; {
+    if (req.user) {
+        try {
+            const deleted = await db.deleteSale(req.params.id);
+            if (deleted.lenght === 0) {
+                return res.status(404).json({ message: &apos;Sale not found&apos; });
+            } else {
+                res.status(200).json({ message: &apos;Sale deleted&apos; });
+            }
+        } catch (err) {
+            console.log(&apos;Error executing database query:&apos;, err);
+            res.status(500).json({ error: &apos;Internal server error&apos; });
+        }
+    } else {
+        console.log(&apos;Access denied - Invalid token&apos;);
+        res.status(401).json({ error: &apos;Access denied&apos; });
+    }
+})
+
+
+export { productsRouter };
+
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
