@@ -1,6 +1,3 @@
-import Base from './dbBase.js'
-
-
 /*
       {
           product: 'Product name',
