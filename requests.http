@@ -25,6 +25,17 @@ Content-Type: application/json
 ### GET Sales
 GET {{apiurl}}/sales HTTP/1.1
 Content-Type: application/json
-Authorization: Bearer <token>
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcxNjE1MTEwMiwiZXhwIjoxNzE2MTU0NzAyfQ.9eqYVJDIKuSvBhJ8Gm5BDKpx-yC5fNcYtJuAQQc4MrU
+#eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsImlhdCI6MTcxNjE0ODU2OCwiZXhwIjoxNzE2MTUyMTY4fQ.ScScTDRe70G2n5qka4mtb7pSMpnVvJrjxc4og1T7amA
 
+
+### erro 500
+GET {{apiurl}}/sales HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer x
+
+
+### endoint not found 404
+GET {{apiurl}}/fake HTTP/1.1
+Content-Type: application/json
 
